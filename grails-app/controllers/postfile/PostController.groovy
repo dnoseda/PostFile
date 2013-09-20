@@ -6,6 +6,6 @@ class PostController {
     def index(){
 		    def body = IOUtils.toString(request.inputStream,"UTF-8")
 
-		    render "el total es: "+body.split("\n").count {true}
+		    render "the total is: "+body.split("\n").count {true}
 	    }
 }
